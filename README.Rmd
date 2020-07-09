@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# platent
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: end -->
+
+An R-package for selection and fitting of latent variable models using penalised likelihood approaches, based on our methods paper [Hui et al. (2018)](https://www.ncbi.nlm.nih.gov/pubmed/29750847). 
+
+Currently this is a placeholder as I'm not yet satisfied with the current state of the package. Come back in future for updates. Our paper does contain rudimental code to fit our stated model if you are in need earlier. 
+
+You can also see information about this package in my [EcoSta2019 talk](http://bit.ly/ecosta2019).
+
+<!-- ## Installation -->
+
+<!-- You can install the development version of `platent` with  -->
+
+<!-- ```{r, eval=F} -->
+<!-- devtools::install_github("emitanaka/platent") -->
+<!-- ``` -->
+
+
+
+
+
+
+
