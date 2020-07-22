@@ -17,17 +17,10 @@ use_multicore <- function(ncores) {
 parse_formula <- function(formula, data = NULL) {
 
   tmp <- deparse(formula)
-  parsed <- as.formula(gsub("id", "as.factor", gsub("fa", "as.factor", tmp)))
+  parsed <- as.formula(gsub("fa|id", "as.factor", tmp))
   designMatrix <- model.matrix(parsed, data)
   Z <- designMatrix[, grep(":", colnames(designMatrix))]
   X <- designMatrix[, -grep(":", colnames(designMatrix))]
-
   return(X, Z)
+
 }
-
-
-
-
-
-
-
