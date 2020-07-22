@@ -15,5 +15,19 @@ use_multicore <- function(ncores) {
 #'
 #' @return the X and Z matrices
 parse_formula <- function(formula, data = NULL) {
-  # FILL
+
+  tmp <- deparse(formula)
+  parsed <- as.formula(gsub("id", "as.factor", gsub("fa", "as.factor", tmp)))
+  designMatrix <- model.matrix(parsed, data)
+  Z <- designMatrix[, grep(":", colnames(designMatrix))]
+  X <- designMatrix[, -grep(":", colnames(designMatrix))]
+
+  return(X, Z)
 }
+
+
+
+
+
+
+
