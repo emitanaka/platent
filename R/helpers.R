@@ -5,7 +5,9 @@ ofal_control <- function(ncores = NULL,
                          trace = FALSE,
                          seed = NULL,
                          ...) {
+
   use_multicore(ncores)
 
-  list(eps = eps, max_iter = max_iter, trace = trace, max_tuning = max_tuning, seed = seed)
+  list(eps = eps, max_iter = max_iter, trace = trace, max_tuning = max_tuning,
+       seed = seed, ...)
 }
